@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Available flight</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+    table,th,td{
+      border:4px solid white;
+      border-collapse: collapse;
+      
+      
+    }
+    th,td{
+      background-color:aquamarine;
+      
+      width:10%;
+      height: 40px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    
+    <div class="header">
+       
+        <nav class="navbar">
+            <ul class="link-group">
+                <li class="link active"><a href="home.html">Home</a></li>
+                <li class="link"><a href="search.html">Search</a></li>
+                <li class="link active"><a href="/bookings">My Bookings</a></li>
+                <li class="link"><a href="/profile"><i class='fa fa-user' id="profile"></i></a></li>
+            </ul>
+        </nav>
+    
+    </div>
+   
+   
+        
+        
+        <div class="my">
+          
+         <form action="mybook" method="post">
+          <table style="margin-left:1%;margin-top:15%;background-color: black;">
+           
+            <tr id="row">
+              <th>FLIGHT NUMBER</th>
+              <th>FLIGHT NAME</th>
+              <th>START LOCATION</th>
+              <th>END LOCATION</th>
+              <th>DATE</th>
+              <th>TIME</th>
+              <th>SEATS COUNT</th>
+              <th>TICKET AMOUNT</th>
+             
+            </tr>
+          <% bookingsList.forEach( book => {%>
+           
+           
+            <tr id="row">
+              <td>
+        <p><span><%= book.flightno%></span> </p>
+      </td>
+      <td>
+        
+        <p><span><%= book.flightname%></span></p>
+     </td>
+     <td>
+        <p><span><%=book.sl%></span></p>
+</td>
+   <td>
+        <p><span><%=book.el%></span></p>
+        </td>
+        <td>
+          <p><span><%=book.date%></span></p>
+          </td>
+        <td>
+          <p><span><%=book.time%></span></p>
+          </td>
+          <td>
+            <p><span><%=book.noseats%></span></p>
+            </td>
+            <td>
+              <p><span><%=book.amount%></span></p>
+              </td>
+          
+      </tr>
+      <%})%>
+      </table>
+      
+        </form>
+  
+     </div>
+
+
+    </body>
+    </html>

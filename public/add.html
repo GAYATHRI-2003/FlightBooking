@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add Flights</title>
+    <link rel="stylesheet" href="css/add.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <img style="width:100%;opacity:0.9;position: fixed" src="C:\Users\ysnat\Desktop\devrev\public\images\pexels.jpeg">;
+    <div class="header">
+       
+        <nav class="navbar">
+            <ul class="link-group">
+                <li class="link"><a href="home.html">Home</a></li>
+                <li class="link"><a href="search.html">Search</a></li>
+               
+                <li class="link"><a href="/prof"><i class='fa fa-user' id="profile"></i></a></li>
+            </ul>
+        </nav>
+    
+    </div>
+    <div class="image">
+      <img src="images/back.jpg">
+    </div>
+    <div class="add-box">
+      
+      <form action="addflight" method="post">
+        <label>Flight Name</label>
+        <input type="text" style="left:80%;position:absolute;height:30px;" id="name"name="name"  required>
+        <br><br>
+        <label>Flight Number</label>
+        <input type="text" style="left:80%;position:absolute;height:30px;" id="no"name="no"  required>
+        <br><br>
+        <label>Start Location</label>
+       
+        <select  style="left:80%;position:absolute;height:30px;" id="sl" name="sl" required>
+          <option name="" value="20" disabled selected>Select a location...</option>
+         
+          <option value="bangalore">bangalore</option>
+          <option value="chennai">chennai</option>
+          <option value="kolkata">kolkata</option>
+          <option value="delhi">delhi</option>
+          <option value="mumbai">mumbai</option>
+          <option value="hyderabad">hyderabad</option>
+          <option value="pune">pune</option>
+          <option value="jaipur">jaipur</option>
+          <option value="goa">goa</option>
+          <option value="cochin">cochin</option>
+          <option value="lucknow">lucknow</option>
+      </select>
+        <br><br>
+        <label>End Location</label>
+       
+        <select  style="left:80%;position:absolute;height:30px;" id="el" name="el" required>
+          <option name="" value="20" disabled selected>Select a location...</option>
+         
+          <option value="bangalore">bangalore</option>
+          <option value="chennai">chennai</option>
+          <option value="kolkata">kolkata</option>
+          <option value="delhi">delhi</option>
+          <option value="mumbai">mumbai</option>
+          <option value="hyderabad">hyderabad</option>
+          <option value="pune">pune</option>
+          <option value="jaipur">jaipur</option>
+          <option value="goa">goa</option>
+          <option value="cochin">cochin</option>
+          <option value="lucknow">lucknow</option>
+      </select>
+        <br><br>
+        <label>Ticket Amount</label>
+        <input type="text" style="left:80%;position:absolute;height:30px;" id="price"name="price"  required>
+        <br><br>
+        <label>Departure Date</label>
+        <input type="date" style="left:80%;position:absolute;height:30px;width:165px" id="date"name="date" min="2023-06-21"  max="2023-12-31"  required>
+        <br><br>
+        <label>Departure Time in 24 hours Forma</label>
+       
+        <select  style="left:80%;position:absolute;height:30px;" id="time" name="time"  required>
+          
+        
+          <option value="4:00">:4:00</option>
+          <option value="5:00">5:00</option>
+          <option value="6:00">6:00</option>
+          <option value="7:00">7:00</option>
+          <option value="8:00">8:00</option>
+          <option value="9:00">9:00</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="13:00">13:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+          <option value="17:00">17:00</option>
+          <option value="18:00">18:00</option>
+          <option value="19:00">19:00</option>
+          <option value="20:00">20:00</option>
+          <option value="21:00">21:00</option>
+          <option value="22:00">22:00</option>
+
+
+
+      </select>
+        <br><br>
+        <input  type="Submit" style="width:80px;height:40px" value="Submit" class="button" /><br><br><br>
+      
+    </div>
+
+    
+   
+  </body>
+</html>
+
